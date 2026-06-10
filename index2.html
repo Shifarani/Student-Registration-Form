@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        body{
+            background-color: rgb(211, 227, 234);
+        }
+
+        .box1{
+            border:2px solid white;
+            background-color: rgb(231, 238, 240);
+            height:400px;
+            width:300px;
+            margin:auto;
+            margin-top:100px;
+        }
+
+        .box2{
+            border:2px solid rgb(232, 227, 218);
+            background-color:white;
+            box-shadow: 2px 2px 5px grey;
+            margin:auto;
+            height:55vh;
+            width:17vw;
+            min-width:260px;
+            margin-top:20px;
+            margin-bottom:20px;
+            border-radius:10px;
+        }
+
+        .img{
+            height:200px;
+            width:250px;
+            border-radius:10px;
+            margin:auto;
+            display:block;
+        }
+
+        /* Buttons ko 3px right */
+        span{
+            display:inline-block;
+            margin-left:3px;
+        }
+
+        .btn1{
+            border:1px solid rgb(57, 57, 57);
+            border-radius:12px;
+            padding:4px 7px;
+            line-height:1;
+            font-size:8px;
+        }
+
+        .btn2{
+            border:1px solid rgb(57, 57, 57);
+            border-radius:12px;
+            padding:4px 7px;
+            line-height:1;
+            font-size:8px;
+        }
+
+        h3{
+            margin-top:12px;
+            margin-bottom:5px;
+            padding-left:10px;
+            font-weight:normal;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .para{
+            font-size:12px;
+            color:gray;
+            padding-left:10px;
+            padding-right:10px;
+            margin-top:0;
+            margin-bottom:8px;
+        }
+
+        .btn3{
+            border:1px solid rgb(57, 57, 57);
+            border-radius:12px;
+            line-height:1;
+            font-size:8px;
+            background-color:rgb(183, 201, 209);
+            color:rgb(3, 187, 254);
+            display:block;
+            padding:8px 10px;
+            margin-left:100px;
+
+            
+            position:relative;
+            margin-bottom:2px;
+        }
+
+        @media(max-width:600px){
+            .box2{
+                width:90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+
+            <img class="img" src="teddy.jpg" alt="error in image">
+
+            <span>
+                <button class="btn1">Nature</button>
+                <button class="btn2">Teddy</button>
+            </span>
+
+            <h3>My Teddy Story</h3>
+
+            <p class="para">
+                Teddy bears are soft and lovable toys that bring comfort,
+                happiness and joy to children.It is my Lovely teddy.
+            </p>
+
+            <button class="btn3">Read More ></button>
+
+        </div>
+    </div>
+</body>
+</html>
