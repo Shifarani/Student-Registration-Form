@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:rgb(10, 10, 10);
+        }
+        .main{
+            border:2px solid rgb(252, 249, 249);
+            height:500px;
+            width:520px;
+            position: relative;
+            margin-top:50px;
+            margin-left:400px;
+            overflow:hidden;
+        }
+        .navbar{
+            background-color:pink;
+            height:40px;
+            width:520px;
+        }
+        .subclass1{
+            display:flex;
+            justify-content:space-around;
+            align-items: center;
+            border:2px solid whitesmoke;
+            height:200px;
+            width:500px;
+            margin:5px 0px 0px;
+            margin-left:8px;
+            margin-right:8px;
+            background-color: rgb(184, 231, 184);
+
+        }
+        .sc1{
+            border:2px solid white;
+            background-color: pink;
+            height:150px;
+            width:180px;
+
+        }
+        .sc2{
+            border:2px solid white;
+            background-color: rgb(134, 176, 196);
+            height:150px;
+            width:180px;
+
+        }
+        .img{
+            height:70px;
+            width:70px;
+            margin-left:420px;
+            margin-top:15px;
+            transition:0.4s ease;
+
+        }
+        .img:hover{
+             filter:hue-rotate(180deg);
+              box-shadow:0 0 20px rgb(7, 226, 241);
+              border-radius:50%;
+        }
+        .divv{
+            height:80px;
+            width:380px;
+            border:2px solid white;
+            border-radius: 20px;
+            margin:auto;
+            margin-top:10px;
+            color:whitesmoke;
+            justify-content: center;
+            text-align: center;
+            font-family:cursive;
+        }
+         ::selection{
+            background-color: pink;
+            color:skyblue;
+            /*Its very interesting property*/
+         }
+        .footer{
+            background-color:whitesmoke;
+            height:40px;
+            width:520px;
+            margin-top:30px;
+
+        }
+        
+        @media only screen and (max-width:768px){
+
+            .main{
+                width:77%;
+                height:auto;
+                margin:20px auto;
+                min-height:500px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+       <border>
+        <header>
+            <nav class="navbar">
+
+            </nav>
+        </header>
+       </border>
+
+        <div class="subclass1">
+            <div class="sc1"></div>
+            <div class="sc2"></div>
+        </div>
+
+        <img class="img" src="circle.webp" alt="Image can not be show in UI">
+
+        <div class="divv">
+            Welcome to this modern frontend project built using HTML and CSS.
+            It demonstrates a simple, responsive, and visually appealing website layout.
+        </div>
+
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+</body>
+</html>

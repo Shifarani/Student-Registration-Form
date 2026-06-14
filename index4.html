@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haridwar University</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Top Bar */
+.top-bar{
+    height:48px;
+    background-color:#1e2d73;
+}
+
+.top-container{
+    max-width:1400px;
+    margin:auto;
+    height:48px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    color:white;
+}
+
+.top-container a{
+    color:#ddd;
+    text-decoration:none;
+    margin-left:15px;
+    font-size:14px;
+}
+
+/* Navbar */
+
+.navbar{
+    background:white;
+    border-bottom:30px solid #6cb33f;
+    padding-top: 2px;
+    padding-bottom:2px;
+    
+}
+
+.nav-container{
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:60px;
+}
+
+.logo-content{
+    font-size:10px;
+    color:#666;
+}
+
+.nav-link{
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+.nav-link a{
+    text-decoration:none;
+    color:#21345f;
+    font-size:18px;
+}
+
+.badge img{
+    width:90px;
+}
+
+#menu-toggle{
+    display:none;
+}
+
+.hamburger{
+    display:none;
+    width:42px;
+    height:42px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    font-size:24px;
+}
+
+/* Hero Section */
+
+.hero{
+    height:80vh;
+    background-image:url("image.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.hero-content button{
+    background:#6cb33f;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* Responsive */
+
+@media (max-width:992px){
+
+    .navbar{
+        padding:10px 15px;
+    }
+
+    .logo img{
+        width:45px;
+    }
+
+    .logo-content h1{
+        font-size:12px;
+    }
+
+    .logo-content p{
+        font-size:10px;
+    }
+
+    .badge img{
+        width:60px;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .nav-link{
+        position:absolute;
+        top:95px;
+        left:0;
+        width:200%;
+        background:white;
+        flex-direction:column;
+        gap:0;
+        display:none;
+        box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+        margin-right:50px;
+        font-size:20px;
+    }
+
+    .nav-link li{
+        border-bottom:1px solid #eee;
+    }
+
+    .nav-link a{
+        display:block;
+        padding:15px;
+        font-size:16px;
+    }
+
+    /* Task 1 Bug Fixed */
+    #menu-toggle:checked ~ .nav-link{
+        display:flex;
+    }
+
+    .top-container{
+        flex-direction:column;
+        justify-content:center;
+        gap:5px;
+        height:auto;
+        padding:10px;
+    }
+
+    .top-bar{
+        height:auto;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Top Bar -->
+
+<div class="top-bar">
+    <div class="top-container">
+
+        <div class="contact-info">
+             +91-9801012345, +91-7500102111
+        </div>
+
+        <div class="quick-links">
+            <a href="#">Career</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+            <button style="background-color:#6cb33f; color:#ddd; padding:8px; border-radius:6px;" >Apply Now</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="nav-container">
+
+    <!-- Logo -->
+
+    <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx_JTf-9puhCzWK2f3KYli5CvqtSNTPdBZJg&s" alt="logo">
+
+        <div class="logo-content">
+            <h1>HARIDWAR <br> UNIVERSITY</h1>
+            <p>Committed to Excellence in Education</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- Navigation -->
+
+    <ul class="nav-link">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUTUS</a></li>
+        <li><a href="#">ACADEMICS</a></li>
+        <li><a href="#">STUDENTCORNER</a></li>
+        <li><a href="#">ADMISSION</a></li>
+        <li><a href="#">PLACEMENT</a></li>
+        <li><a href="#">RESEARCH</a></li>
+        <li><a href="#">ALUMNI</a></li>
+    </ul>
+
+    <div style="display:flex; align-items:center; gap:15px;">
+
+        <div class="badge">
+            <img src="https://huroorkee.ac.in/_next/image?url=%2Fimages%2Flogos%2F16years.png&w=256&q=75" alt="badge">
+        </div>
+
+        <label for="menu-toggle" class="hamburger">
+            ☰
+        </label>
+
+    </div>
+
+</div>
+
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Welcome to Haridwar University</h1>
+
+        <p>
+            Committed to Excellence in Education and Innovation
+        </p>
+        <button style="background-color:#6cb33f; color:#ddd; padding:8px; border-radius:8px; font-size: 12px; padding:10px 12px;" >Explore Programs <</button>
+
+       
+
+    </div>
+
+</section>
+
+</body>
+</html>
