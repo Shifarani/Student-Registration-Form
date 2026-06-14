@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter App</title>
+    <style>
+        body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+
+.inc{
+    flex:1;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.dec{
+    flex:1;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top:100px;
+
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Counter App</h1>
+
+        <h2 id="count">0</h2>
+
+       <div class="bar">
+
+        <div class="inc" onclick="increment()">Increment</div>
+        <div class="dec" onclick="decrement()">Decrement</div>
+       </div>
+    </div>
+
+    <script>
+        let count = 0;
+
+           function increment() {
+            count++;
+            document.getElementById("count").innerText = count;
+    }
+
+           function decrement() {
+           count--;
+           document.getElementById("count").innerText = count;
+    }
+    </script>
+</body>
+</html>
